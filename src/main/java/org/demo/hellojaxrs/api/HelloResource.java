@@ -11,6 +11,10 @@ import javax.ws.rs.core.MediaType;
 public class HelloResource {
 	public static final String APPLICATION_JSON_UTF8 = MediaType.APPLICATION_JSON + ";charset=UTF-8"; 
 	
+	/*
+	 * http://localhost:8080/hellojaxrs/api/hello
+	 */
+	
 	@GET
 	@Produces(HelloResource.APPLICATION_JSON_UTF8)
 	public HelloModel getHello() {
